@@ -29,5 +29,8 @@ mongoose.connect(process.env.MONG_URI).then(()=>{
     console.log(err);
 })
 
+app.get("/",(req,res)=>{
+    res.send("<h1>SERVER UP</h1>")
+})
 
 //listen for requests
